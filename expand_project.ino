@@ -54,7 +54,7 @@ void loop() {
   if (distanceA < 50) {
      // calculate frequency and servo position for given distance (within safe range)
     freqA = 27 + 1500 * (1 - distanceA / 50);
-    positionA = 180 * (1 - distanceA / 50);
+    positionA = 60 * (1 - distanceA / 50);
   
     // if frequency is different, change it
     if (abs(freqA - lastFreqA) > 5) {
